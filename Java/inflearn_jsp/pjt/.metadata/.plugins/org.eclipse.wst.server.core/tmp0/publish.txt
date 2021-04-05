@@ -1,0 +1,6 @@
+#Tomcat publish data
+#Tue Mar 30 17:37:35 KST 2021
+org.eclipse.jst.jee.server\:testpjt=E\:\\jsp_inflearn\\download\\apache-tomcat-8.5.64\\wtpwebapps\\testpjt
+org.eclipse.jst.jee.server\:Servlet6=E\:\\jsp_inflearn\\download\\apache-tomcat-8.5.64\\wtpwebapps\\Servlet6
+org.eclipse.jst.jee.server\:ServletMappingTest=E\:\\jsp_inflearn\\download\\apache-tomcat-8.5.64\\wtpwebapps\\ServletMappingTest
+org.eclipse.jst.jee.server\:testservletPjt=E\:\\jsp_inflearn\\download\\apache-tomcat-8.5.64\\wtpwebapps\\testservletPjt

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button type="button" name="button" onclick="addNum(100,7)" >더하기</button>
+    숫자1: <input type="text" id="input1"><br>
+    숫자2: <input type="text" id="input2"><br>
+    <button onclick="addNum2()">더하기</button>
+  </body>
+  <script>
+    var num1, num2;
+    num1 = 10;
+    num2 = 20;
+
+    function addNum(x,y){
+      console.log(x+y);
+    }
+    x= addNum(num1, num2);
+    function addNum2(x,y){
+      var num1, num2;
+      num1 = document.getElementByID("input1").value;
+      num2 = document.getElementByID("input2").value;
+
+      console.log(Number(num1) + Number(num2));
+    }
+
+  </script>
+</html>
