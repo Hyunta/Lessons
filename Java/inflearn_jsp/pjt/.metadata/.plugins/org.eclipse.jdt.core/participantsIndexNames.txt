@@ -1,3 +1,9 @@
 INDEX VERSION 1.131
+E:\Lessons\Java\inflearn_jsp\pjt\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3705911013.index
+\jsptest\src
+E:\Lessons\Java\inflearn_jsp\pjt\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1953076038.index
+\jsptest\src
+E:\Lessons\Java\inflearn_jsp\pjt\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2739117248.index
+\testpjt\src
 E:\jsp_inflearn\pjt\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2739117248.index
 \testpjt\src
