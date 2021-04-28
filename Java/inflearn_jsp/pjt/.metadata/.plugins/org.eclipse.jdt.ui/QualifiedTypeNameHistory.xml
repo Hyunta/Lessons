@@ -11,4 +11,10 @@
     <fullyQualifiedTypeName name="makingclassPjt.Bicycle"/>
     <fullyQualifiedTypeName name="method.ChildClass"/>
     <fullyQualifiedTypeName name="constructor.ObjectClass"/>
+    <fullyQualifiedTypeName name="settergetter.Student"/>
+    <fullyQualifiedTypeName name="inheritance.ChildClass"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="inheritance.FirstChildClass"/>
+    <fullyQualifiedTypeName name="inheritance.SecondChildClass"/>
+    <fullyQualifiedTypeName name="inheritance.ParentClass"/>
 </qualifiedTypeNameHistroy>
