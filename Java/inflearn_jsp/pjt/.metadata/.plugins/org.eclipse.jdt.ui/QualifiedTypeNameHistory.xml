@@ -17,4 +17,7 @@
     <fullyQualifiedTypeName name="inheritance.FirstChildClass"/>
     <fullyQualifiedTypeName name="inheritance.SecondChildClass"/>
     <fullyQualifiedTypeName name="inheritance.ParentClass"/>
+    <fullyQualifiedTypeName name="interfaceB"/>
+    <fullyQualifiedTypeName name="interfaceA"/>
+    <fullyQualifiedTypeName name="interfaceClass"/>
 </qualifiedTypeNameHistroy>
