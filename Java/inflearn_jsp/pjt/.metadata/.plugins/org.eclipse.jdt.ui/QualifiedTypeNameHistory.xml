@@ -21,4 +21,6 @@
     <fullyQualifiedTypeName name="interfaceA"/>
     <fullyQualifiedTypeName name="interfaceClass"/>
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+    <fullyQualifiedTypeName name="java.net.Socket"/>
+    <fullyQualifiedTypeName name="java.net.ServerSocket"/>
 </qualifiedTypeNameHistroy>
