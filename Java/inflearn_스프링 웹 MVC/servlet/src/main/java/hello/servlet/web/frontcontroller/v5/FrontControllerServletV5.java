@@ -50,9 +50,13 @@ public class FrontControllerServletV5 extends HttpServlet {
     }
 
     @Override
+    protected long getLastModified(HttpServletRequest req) {
+        return super.getLastModified(req);
+    }
+
+    @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        //MemberFormControllerV3
         Object handler = getHandler(request);
         if (handler == null) {
             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
@@ -80,7 +84,7 @@ public class FrontControllerServletV5 extends HttpServlet {
                 return adapter;
             }
         }
-        throw new IllegalArgumentException("handler adapter를 찾을 수 없습니다. handler = " + handler);
+        throw new IllegalArgumentException("handler adapter 를 찾을 수 없습니다. handler = " + handler);
     }
 
     private MyView viewResolver(String viewName) {
