@@ -70,7 +70,7 @@ public class BasicController {
     }
 
     @GetMapping("/link")
-    public String ling(Model model) {
+    public String link(Model model) {
         model.addAttribute("param1", "data1");
         model.addAttribute("param2", "data2");
         return "basic/link";
@@ -80,6 +80,18 @@ public class BasicController {
     public String literal(Model model) {
         model.addAttribute("data", "Spring!");
         return "basic/literal";
+    }
+
+    @GetMapping("/operation")
+    public String operation(Model model) {
+        model.addAttribute("nullData", null);
+        model.addAttribute("data", "Spring!");
+        return "basic/operation";
+    }
+
+    @GetMapping("/attribute")
+    public String attribute(Model model) {
+        return "basic/attribute";
     }
 
     @Data
