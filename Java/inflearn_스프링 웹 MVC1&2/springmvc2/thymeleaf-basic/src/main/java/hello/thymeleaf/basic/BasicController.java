@@ -105,6 +105,8 @@ public class BasicController {
         list.add(new User("UserA", 10));
         list.add(new User("UserB", 20));
         list.add(new User("UserC", 30));
+
+        model.addAttribute("users", list);
     }
 
     @Data
