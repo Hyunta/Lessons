@@ -69,6 +69,19 @@ public class BasicController {
         return "basic/date";
     }
 
+    @GetMapping("/link")
+    public String ling(Model model) {
+        model.addAttribute("param1", "data1");
+        model.addAttribute("param2", "data2");
+        return "basic/link";
+    }
+
+    @GetMapping("/literal")
+    public String literal(Model model) {
+        model.addAttribute("data", "Spring!");
+        return "basic/literal";
+    }
+
     @Data
     static class User {
         private String username;
