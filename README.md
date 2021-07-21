@@ -1,7 +1,6 @@
 # 210721 Status
 
 ## ⛏️기술 스택
-
 ### Backend
 - Java
 - Spring Boot , Spring MVC, Spring Data JPA
@@ -10,6 +9,7 @@
 - Gradle, Maven
 - IntelliJ, Visual Studio Code
 - Git
+  
 ### DevOps
 
 - AWS EC2, Lambda
@@ -164,6 +164,108 @@ https://github.com/Hyunta/Lessons/tree/master/Java/inflearn_jsp
 
 (21.07.21) 스프링 핵심원리, MVC 1,2편 JPA 1편을 수강했다. 다시 이 강의 목차를 보는데 예전과는 확실히 달라졌다.
 
+source:
+https://github.com/Hyunta/Lessons/tree/master/Java/inflearn_%EC%8A%A4%ED%94%84%EB%A7%81%EC%9E%85%EB%AC%B8/hello-spring
+
+
+
+### [Inflearn_김영한] 스프링 핵심 원리 - 기본편
+
+📺[강의 소개](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8/dashboard)
+
+기간: 2021.05 ~ 2021.06
+
+스프링의 강력한 기능들을 소개해주는 강의, 객체 지향 프로그래밍에 대한 설명과 5가지 원칙(SOLID)를 지켜야 하는 이유를 시작으로 스프링의 필요성을 몸소 느끼게 해주었다.
+
+- Java를 이용하여 주문하는 예제를 통해 회원, 주문 도메인과 서비스를 만들었다.
+- 변동사항을 통해 기존 코드의 문제점을 제기하고 리팩터링하는 과정을 통해 문제상황을 직접 대면하고 해결했다.
+- 스프링 컨테이너를 통해 문제를 해결하고 스프링 빈에 대한 이해
+- 빈의 싱글톤 컨테이너를 이해
+- 컴포넌트 스캔을 통한 의존관계 자동 주입
+- 빈의 생명주기를 이해
+
+강의를 다시 정리하면서 다시 들어봐야겠다는 생각이 강하게 든다. JPA 강의를 마저 듣고 처음부터 다시 들어봐야겠다.
+
+source:
+https://github.com/Hyunta/Lessons/tree/master/Java/inflearn_%EC%8A%A4%ED%94%84%EB%A7%81%20%ED%95%B5%EC%8B%AC%EC%9B%90%EB%A6%AC
+
+### [Inflearn_김영한] 모든 개발자를 위한 HTTP 웹 기본 지식
+
+📺[강의 소개](https://www.inflearn.com/course/http-%EC%9B%B9-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/dashboard)
+
+기간: 2021.06
+
+웹 애플리케이션에 대해 학습하기 전에 HTTP를 공부했다. 인터넷 네트워크가 이뤄지는 방식부터 HTTP의 메서드를 이해하고 각 메서드가 가지는 특징들을 공부했다.
+
+- 인터넷 네트워크 (IP, TCP, UDP, PORT, DNS)
+- HTTP의 구조와 메시지 형태
+- 각 메서드의 특징들 (GET, POST, PUT, PATCH, DELETE)
+- HTTP 상태코드
+
+
+source:
+https://github.com/Hyunta/Lessons/tree/master/CS/inflearn_%EB%AA%A8%EB%93%A0%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20HTTP%20%EC%9B%B9%20%EA%B8%B0%EB%B3%B8%EC%A7%80%EC%8B%9D
+
+### [Inflearn_김영한] 스프링 MVC 1편 - 백엔드 웹 개발 핵심 기술
+
+📺[강의 소개](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-1/dashboard)
+
+기간: 2021.06
+
+웹 애플리케이션에 대해 학습하고 서블릿으로 구현을 했다. HTTP Request, Response를 어떻게 처리해야하는지 방법을 익히고 이를 스프링을 통해서 처리한다.
+
+- 서블릿과 JSP를 이용해 MVC 패턴을 적용해보고 불편함 확인
+- MVC 프레임워크를 직접 만들어 보았다.
+	- 기본적인 프론트 컨트롤러, view, model 을 구현한다.
+- 이를 스프링 MVC 구조로 가져와 이해한다.
+	- 핸들러 매핑과, 뷰 리졸버의 역할을 확인한다.
+- 스프링 MVC에서 HTTP 처리하는 방법을 익힌다.
+- 스프링 MVC를 통해 웹 페이지를 만들며 각 기능을 구현해본다.
+
+
+source:
+https://github.com/Hyunta/Lessons/tree/master/Java/inflearn_%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%9B%B9%20MVC1%262/spingmvc1
+
+### [Inflearn_김영한] 스프링 MVC 2편 - 백엔드 웹 개발 핵심 기술
+
+📺[강의 소개](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-mvc-2/dashboard)
+
+기간: 2021.07
+
+1편에서 배운 기본적인 틀 외에 개발할 때 필요한 활용 기능들은 학습했다. 타임리프를 통해 템플릿을 다루고, 메시지를 이용해보고, Validation을 했다. 로그인 처리하는 방법과 예외처리 하는 방법들을 배웠다.
+
+- 타임리프 문법을 학습하고 각 기능들을 구현해본다.
+- 메시지 소스를 통해 국제화도 구현해보고 편리하게 관리한다.
+- 검증하는 과정을 직접 구현하며 BindingResult의 필요성과 각 erorr을 출력하고 처리하는 과정을 구현한다.
+- BeanValidation을 통해 스프링이 제공하는 기능을 구현한다.
+- 로그인 처리 메커니즘을 학습하고, 세션을 통해 해결한다.
+- 서블릿 필터와 스프링 인터셉터로 인증과정을 구현한다.
+- 예외 처리 페이지를 처리하는 방법을 보고 Spring이 제공하는 기능을 구현한다.
+
+
+source:
+https://github.com/Hyunta/Lessons/tree/master/Java/inflearn_%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%9B%B9%20MVC1%262/springmvc2
+
+### [Inflearn_김영한] 실전! 스프링 부트와 JPA 활용1 - 웹 애플리케이션 개발
+
+📺[강의 소개](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-JPA-%ED%99%9C%EC%9A%A9-1/dashboard)
+
+기간: 2021.07
+
+프로젝트를 직접 진행하며 JPA의 쓸모를 느낀다. 기본적인 스프링 MVC에 DB접근까지 더해진 프로젝트이다. 엔티티 클래스를 만들면서 DB 설계 및 관리의 중요성을 깨달았다.
+
+- 회원 관리, 상품 관리, 주문 관리 세 파트로 나누어진다.
+- 각 도메인, 리포지토리, 서비스를 개발하고 기능을 개발한다.
+- 엔티티 설계의 중요성과 도메인 주도 설계(DDD)를 학습.
+
+source:
+https://github.com/Hyunta/Lessons/tree/master/Java/inflearn_%EC%8B%A4%EC%A0%84!%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B6%80%ED%8A%B8%EC%99%80%20JPA%20%ED%99%9C%EC%9A%A91
+
+
+
+
+
+
 
 
 
@@ -193,7 +295,8 @@ source:
 https://github.com/Hyunta/Lessons/tree/master/Python/jocoding_auto_stock
 
 ### [개인]Dacon 대회 과정 서버 구축하기
-기간 2021.03
+
+기간: 2021.03
 
 국비교육 최종 프로젝트로 Dacon 참가를 마치고 이를 서버에다 올려보고 싶었다. Linux OS에 Apache 서버를 열고 간단하게 HTML 페이지를 구성하여 만들었다.
 
@@ -204,7 +307,29 @@ https://github.com/Hyunta/Lessons/tree/master/Python/jocoding_auto_stock
 source:
 https://github.com/Hyunta/sea_ice_prediction
 
+### [Programmers] 프로그래머스 월간 코드 챌린지 시즌2
+[대회 안내](https://programmers.co.kr/competitions/1078/monthly-code-challenge-s2)
 
+기간: 2021.03 ~ 2021.05
+
+코딩테스트를 한창 공부할 때 내 수준을 알고 싶어서 참가했다.
+4월: 4문제 중 2.5문제를 풀어서 만족스러운 결과를 냈다.
+5월에는 일정이 겹쳐서 아쉽게 참가하지 못했다.
+![](https://images.velog.io/images/mohai2618/post/b2ca4350-0ba3-4d37-a653-9b977ffa8590/image.png)
+
+
+### [NAVER] CLOVA AI RUSH 2021
+[대회 안내](https://campaign.naver.com/clova_airush/)
+
+기간: 2021.04~2021.06
+
+Dacon 대회 종료 후 DeepLearning을 조금 더 공부해보고자 참가했다. 코딩테스트를 합격하여 1라운드에 진출할 기회가 주어졌다.
+
+5가지 주제가 있었는데 내가 맡아서 해결하고자 했던 문제는 실시간 버스 도착 예정시간 예측 정확도 향상 문제였다.
+
+한계점: Tensorflow 밖에 사용해보지 않았고 경험이 별로 없다보니 Pytorch를 다루는데 버거웠다. 모든 과정을 공부했어야 했고 그러다보니 본질적인 모델에 대한 고민보다는 툴에 대한 공부가 많아져서 2라운드 진출은 못하게 되었다.
+
+개인적으로 아쉬움이 많이 남는다, 이 당시 Spring을 공부하고 있었고 Data Science에 너무 시간을 쏟을 수 없어서 결과가 만족스럽지 못하지만 추후에 더 공부해보고 싶은 욕심은 있다.
 
 
 
