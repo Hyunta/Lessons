@@ -24,7 +24,7 @@ public class JpaMain {
             //회원 저장
             Member member = new Member();
             member.setUsername("member1");
-            member.setTeam(team);
+            member.changeTeam(team);
             em.persist(member);
 
             em.flush();
