@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 @Entity
-public class Team {
+public class Team extends BaseEntity {
     @Id @GeneratedValue
     @Column(name = "TEAM_ID")
     private Long id;
