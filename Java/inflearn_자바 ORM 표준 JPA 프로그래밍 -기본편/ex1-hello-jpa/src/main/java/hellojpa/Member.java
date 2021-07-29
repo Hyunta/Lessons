@@ -1,9 +1,6 @@
 package hellojpa;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 public class Member extends BaseEntity{
@@ -14,13 +11,9 @@ public class Member extends BaseEntity{
     @Column(name = "USERNAME")
     private String username;
 
-    @OneToOne
-    @JoinColumn(name = "LOCKER_ID")
-    private Locker locker;
-
-    @ManyToMany
-    @JoinTable(name = "MEMBER_PRODUCT")
-    private List<Product> products = new ArrayList<>();
+    @ManyToOne
+    @JoinColumn(name ="TEAM_ID", insertable = false, updatable = false)
+    private Team team;
 
 
     public Long getId() {
@@ -39,12 +32,11 @@ public class Member extends BaseEntity{
         this.username = username;
     }
 
-//    public Team getTeam() {
-//        return team;
-//    }
-//
-//    public void changeTeam(Team team) {
-//        this.team = team;
-//        team.getMembers().add(this); //연관관계 편의 메서드
-//    }
+    public Team getTeam() {
+        return team;
+    }
+
+    public void setTeam(Team team) {
+        this.team = team;
+    }
 }
