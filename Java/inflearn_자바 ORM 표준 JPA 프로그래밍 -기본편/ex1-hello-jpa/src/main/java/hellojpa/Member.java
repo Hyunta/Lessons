@@ -1,9 +1,10 @@
 package hellojpa;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
-public class Member extends BaseEntity{
+public class Member{
     @Id @GeneratedValue
     @Column(name = "MEMBER_ID")
     private Long id;
@@ -11,9 +12,24 @@ public class Member extends BaseEntity{
     @Column(name = "USERNAME")
     private String username;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn
-    private Team team;
+    //기간 period
+    @Embedded
+    private Period workPeriod;
+
+    //주소 address
+    @Embedded
+    private Address HomeAddress;
+
+    @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name= "city",
+                    column=@Column(name = "WORK_CITY")),
+            @AttributeOverride(name= "street",
+                    column=@Column(name = "WORK_STREET")),
+            @AttributeOverride(name= "zipcode",
+                    column=@Column(name = "WORK_ZIPCODE"))
+    })
+    private Address WorkAddress;
 
 
     public Long getId() {
@@ -32,11 +48,19 @@ public class Member extends BaseEntity{
         this.username = username;
     }
 
-    public Team getTeam() {
-        return team;
+    public Period getWorkPeriod() {
+        return workPeriod;
     }
 
-    public void setTeam(Team team) {
-        this.team = team;
+    public void setWorkPeriod(Period workPeriod) {
+        this.workPeriod = workPeriod;
+    }
+
+    public Address getHomeAddress() {
+        return HomeAddress;
+    }
+
+    public void setHomeAddress(Address homeAddress) {
+        HomeAddress = homeAddress;
     }
 }
