@@ -12,16 +12,26 @@ public class JpaMain {
         tx.begin();
 
         try {
-            Member member = new Member();
-            member.setUserName("member1");
-            member.setAge(10);
-            em.persist(member);
+
+            for (int i = 0; i < 100; i++){
+                Member member = new Member();
+                member.setUserName("member"+i);
+                member.setAge(i);
+                em.persist(member);
+            }
+
 
             em.flush();
             em.clear();
 
-            List<Team> result = em.createQuery("select t from Member m join m.team t", Team.class)
+            List<Member> result = em.createQuery("select m from Member m order by m.age desc ", Member.class)
+                    .setFirstResult(0)
+                    .setMaxResults(10)
                     .getResultList();
+            System.out.println("result.size() = " + result.size());
+            for (Member member1 : result) {
+                System.out.println("member1 = " + member1);
+            }
 
             tx.commit();
         } catch (Exception e) {
