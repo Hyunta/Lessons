@@ -8,7 +8,6 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static javax.persistence.FetchType.*;
 
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
@@ -26,6 +25,6 @@ public class Item {
     private int price;
     private int stockQuantity;
 
-    @ManyToMany(mappedBy = "items", fetch = LAZY)
+    @ManyToMany(mappedBy = "items")
     private List<Category> categories = new ArrayList<>();
 }
