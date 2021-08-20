@@ -41,7 +41,6 @@ public class HelloController {
     @Setter
     static class Hello {
         private String name;
-
     }
 
 }
