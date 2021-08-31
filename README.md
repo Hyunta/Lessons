@@ -1,4 +1,16 @@
-# 210721 Status
+# 210830 Status
+
+## 🙋🏻‍♂️About Me
+
+### Introduction
+
+- 안녕하세요! 백엔드 개발자 준비중인 김현태입니다.
+- 여행과 철학에 몰입하는 즐거운 사람입니다.😀
+- 어제보다 나은 나를 위하여 1일 1커밋 운동과 블로그 기록을 통해 개발중입니다.
+- TDD, Clean Code를 통해 객체 지향적 개발에 대한 고민을 습관화 중입니다.
+- 세상을 아름답게 만드는 교육 플랫폼을 만들고 싶습니다.
+
+
 
 ## ⛏️기술 스택
 ### Backend
@@ -12,7 +24,7 @@
   
 ### DevOps
 
-- AWS EC2, Lambda
+- AWS EC2, RDS
 - MySQL, MariaDB
 - NginX, Apache, Tomcat
 
@@ -42,6 +54,28 @@
 
 대회진행과정 및 source:
 https://github.com/Hyunta/sea_ice_prediction
+
+
+
+### [팀프로젝트] Todolist 웹 만들기
+
+기간: 2021.07 ~ 2021.08
+
+팀: green_muhly(김수빈, 김현태)
+
+Todolist의 기본 기능을 갖춘 연습 프로젝트, 백엔드를 담당하여 개발
+
+프론트엔드와 협업하기 위해 간단한 웹 페이지를 구현. 백엔드는 Spring Web MVC 패턴을 기반으로 개발했고 JPA를 이용해 DB에 접근하였다. AWS EC2를 통해 배포하였고 DB는 AWS RDS를 활용했다.
+
+<아키텍쳐>
+
+![image-20210823200443510](https://github.com/Green-Muhly/todo_docs/raw/master/images/architecture.png)
+
+🌍[주소링크]( http://www.mohai.kro.kr:5000/)
+
+source: https://github.com/Green-Muhly/todo_back
+
+회의록: https://github.com/Green-Muhly/TheMinutes
 
 
 
@@ -260,20 +294,6 @@ https://github.com/Hyunta/Lessons/tree/master/Java/inflearn_%EC%8A%A4%ED%94%84%E
 
 source:
 https://github.com/Hyunta/Lessons/tree/master/Java/inflearn_%EC%8B%A4%EC%A0%84!%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B6%80%ED%8A%B8%EC%99%80%20JPA%20%ED%99%9C%EC%9A%A91
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
