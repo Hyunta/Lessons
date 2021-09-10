@@ -17,7 +17,7 @@
 - Java
 - Spring Boot , Spring MVC, Spring Data JPA
 - JPA
-- Junit5, Junit4
+- Junit5
 - Gradle, Maven
 - IntelliJ, Visual Studio Code
 - Git
