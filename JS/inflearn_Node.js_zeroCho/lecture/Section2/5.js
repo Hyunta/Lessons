@@ -20,3 +20,18 @@ console.log(d);
 const [x,,,y,z]= [1,2,3,4,5]
 
 console.log(x,y,z)
+
+const candyMachine = {
+    status: {
+        name: 'node',
+        count: 5
+    },
+    getCandy: function () {
+        this.status.count--;
+        return this.status.count;
+    }
+};
+
+const getCandy = candyMachine.getCandy();
+const count = candyMachine.status.count;
+console.log(getCandy, count)
