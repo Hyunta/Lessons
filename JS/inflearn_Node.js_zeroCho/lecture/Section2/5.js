@@ -26,7 +26,7 @@ const candyMachine = {
         name: 'node',
         count: 5
     },
-    getCandy: function () {
+    getCandy() {
         this.status.count--;
         return this.status.count;
     }
