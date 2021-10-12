@@ -4,7 +4,6 @@ import hello.core2.AppConfig;
 import hello.core2.member.Grade;
 import hello.core2.member.Member;
 import hello.core2.member.MemberService;
-import hello.core2.member.MemberServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
