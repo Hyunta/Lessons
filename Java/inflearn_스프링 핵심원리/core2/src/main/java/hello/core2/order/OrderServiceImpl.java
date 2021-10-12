@@ -9,18 +9,22 @@ import hello.core2.member.MemoryMemberRepository;
 
 public class OrderServiceImpl implements OrderService {
 
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
     /**
-     * DIP, OCP 위반
+     * private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
+     * private final DiscountPolicy discountPolicy = new RateDiscountPolicy();
      * 1) DIP 위반
      * OrderService가 DiscountPolicy만 의존하는 것이 아니라 구현체도 의존하고 있다.
      * 2) OCP 위반
      * DiscouontPolicy를 변경하기 위해서 OrderService가 변경되어야 한다.
      */
-//    private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
-//    private final DiscountPolicy discountPolicy = new RateDiscountPolicy();
 
-    private DiscountPolicy discountPolicy;
+    private final MemberRepository memberRepository;
+    private final DiscountPolicy discountPolicy;
+
+    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+        this.memberRepository = memberRepository;
+        this.discountPolicy = discountPolicy;
+    }
 
     @Override
     public Order createOrder(Long memberId, String itemName, int itemPrice) {
