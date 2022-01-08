@@ -1,4 +1,4 @@
-package singleton;
+package _01_creational_pattern.singleton;
 
 public class RuntimeExample {
     public static void main(String[] args) {

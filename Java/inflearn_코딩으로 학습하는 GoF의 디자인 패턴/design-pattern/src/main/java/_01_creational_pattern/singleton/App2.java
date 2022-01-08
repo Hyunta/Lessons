@@ -1,7 +1,6 @@
-package singleton;
+package _01_creational_pattern.singleton;
 
 import java.io.*;
-import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 public class App2 {

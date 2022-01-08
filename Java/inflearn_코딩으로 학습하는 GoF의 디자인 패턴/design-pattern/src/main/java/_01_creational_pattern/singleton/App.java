@@ -1,4 +1,4 @@
-//package singleton;
+//package _01_creational_pattern.singleton;
 //
 //import java.io.*;
 //import java.lang.reflect.Constructor;
