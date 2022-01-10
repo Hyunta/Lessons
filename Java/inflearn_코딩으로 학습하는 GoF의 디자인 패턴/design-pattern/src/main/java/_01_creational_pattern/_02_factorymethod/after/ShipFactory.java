@@ -1,4 +1,4 @@
-package _01_creational_pattern.factorymethod.after;
+package _01_creational_pattern._02_factorymethod.after;
 
 public interface ShipFactory {
 
@@ -10,9 +10,7 @@ public interface ShipFactory {
 		return ship;
 	}
 
-	private void sendEmailTo(String email, Ship ship) {
-		System.out.println(ship.getName() + " 다 만들었습니다.");
-	}
+	void sendEmailTo(String email, Ship ship);
 
 	Ship createShip();
 

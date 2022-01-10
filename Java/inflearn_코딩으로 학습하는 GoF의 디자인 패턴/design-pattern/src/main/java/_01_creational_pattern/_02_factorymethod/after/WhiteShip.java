@@ -1,4 +1,4 @@
-package _01_creational_pattern.factorymethod.after;
+package _01_creational_pattern._02_factorymethod.after;
 
 public class WhiteShip extends Ship {
 

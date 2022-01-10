@@ -1,4 +1,4 @@
-package _01_creational_pattern.factorymethod.before;
+package _01_creational_pattern._02_factorymethod.before;
 
 public class Client {
 	public static void main(String[] args) {

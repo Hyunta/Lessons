@@ -1,11 +1,9 @@
-package _01_creational_pattern.factorymethod.before;
+package _01_creational_pattern._02_factorymethod.before;
 
 public class Ship {
 
 	private String name;
-
 	private String color;
-
 	private String logo;
 
 	public String getName() {

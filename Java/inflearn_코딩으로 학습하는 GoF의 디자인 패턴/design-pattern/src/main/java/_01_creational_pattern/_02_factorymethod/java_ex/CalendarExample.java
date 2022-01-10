@@ -1,4 +1,4 @@
-package _01_creational_pattern.factorymethod.java_ex;
+package _01_creational_pattern._02_factorymethod.java_ex;
 
 import java.util.Calendar;
 
