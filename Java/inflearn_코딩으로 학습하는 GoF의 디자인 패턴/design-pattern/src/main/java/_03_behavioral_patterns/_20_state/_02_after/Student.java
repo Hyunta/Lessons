@@ -1,5 +1,6 @@
 package _03_behavioral_patterns._20_state._02_after;
 
+import _03_behavioral_patterns._20_state._02_after.state.OnlineCourse;
 import java.util.HashSet;
 import java.util.Set;
 

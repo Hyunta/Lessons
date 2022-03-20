@@ -1,5 +1,8 @@
 package _03_behavioral_patterns._20_state._02_after;
 
+import _03_behavioral_patterns._20_state._02_after.state.OnlineCourse;
+import _03_behavioral_patterns._20_state._02_after.state.Private;
+
 public class Client {
 
     public static void main(String[] args) {

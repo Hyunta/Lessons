@@ -1,5 +1,6 @@
-package _03_behavioral_patterns._20_state._02_after;
+package _03_behavioral_patterns._20_state._02_after.state;
 
+import _03_behavioral_patterns._20_state._02_after.Student;
 import java.util.ArrayList;
 import java.util.List;
 
