@@ -8,11 +8,11 @@ public class Student {
 
     private String name;
 
+    private Set<OnlineCourse> onlineCourses = new HashSet<>();
+
     public Student(String name) {
         this.name = name;
     }
-
-    private Set<OnlineCourse> onlineCourses = new HashSet<>();
 
     public boolean isAvailable(OnlineCourse onlineCourse) {
         return onlineCourses.contains(onlineCourse);

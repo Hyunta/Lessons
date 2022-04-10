@@ -7,11 +7,11 @@ public class Student {
 
     private String name;
 
+    private final List<OnlineCourse> privateCourses = new ArrayList<>();
+
     public Student(String name) {
         this.name = name;
     }
-
-    private final List<OnlineCourse> privateCourses = new ArrayList<>();
 
     public boolean isEnabledForPrivateClass(OnlineCourse onlineCourse) {
         return privateCourses.contains(onlineCourse);
