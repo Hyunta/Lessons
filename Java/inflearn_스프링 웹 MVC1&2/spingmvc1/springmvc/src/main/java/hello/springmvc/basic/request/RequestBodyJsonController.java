@@ -17,8 +17,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
 /**
- * {"username":"hello", "age":20}
- * content-type: application/json
+ * {"username":"hello", "age":20} content-type: application/json
  */
 
 @Slf4j
