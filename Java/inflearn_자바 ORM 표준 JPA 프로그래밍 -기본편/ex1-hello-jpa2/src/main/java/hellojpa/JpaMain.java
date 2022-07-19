@@ -1,5 +1,6 @@
 package hellojpa;
 
+import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -15,14 +16,36 @@ public class JpaMain {
         tx.begin();
 
         try {
-            Member member = new Member(200L, "member200");
+            Team team = new Team();
+            team.setName("A");
+            em.persist(team);
+
+            Member member = new Member();
+            member.setUsername("member");
+            member.setAge(20);
+
+            member.changeTeam(team);
+
             em.persist(member);
 
             em.flush();
+            em.clear();
 
-            System.out.println("=====================");
+            String query = "select m from Member m inner join m.team t";
+            List<Member> result = em.createQuery(query, Member.class)
+                    .getResultList();
+
+            Team team1 = result.get(0).getTeam();
+            List<Member> members = team1.getMembers();
+            for (Member member1 : members) {
+                System.out.println("member1 = " + member1);
+                System.out.println(member1.equals(member));
+            }
+            System.out.println("member = " + member);
+
             tx.commit();
-        } catch (Exception e) {
+        } catch (
+                Exception e) {
             tx.rollback();
         } finally {
             em.close();
