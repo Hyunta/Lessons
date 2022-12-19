@@ -3,6 +3,7 @@ package hello.aop.pointcut;
 import hello.aop.member.MemberServiceImpl;
 import java.lang.reflect.Method;
 import lombok.extern.slf4j.Slf4j;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.aop.aspectj.AspectJExpressionPointcut;
@@ -20,6 +21,13 @@ public class ExecutionTest {
 
     @Test
     void printMethod() {
+        //public java.lang.String hello.aop.member.MemberServiceImpl.hello(java.lang.String)
         log.info("helloMethod = {}", helloMethod);
+    }
+
+    @Test
+    void exactMatch() {
+        pointcut.setExpression("execution(public java.lang.String hello.aop.member.MemberServiceImpl.hello(java.lang.String))");
+        Assertions.assertThat(pointcut.matches(helloMethod, MemberServiceImpl.class)).isTrue();
     }
 }
