@@ -166,3 +166,34 @@ SOA와 MSA의 차이
 
 - EventStream을 통해서 데이터 동기화를 진행할 수도 있다.
 - 각 서비스가 다른 언어와 다른 DB를 사용해도 된다.
+
+
+
+
+
+# MSA 표준 구성요소
+
+![image-20230118161326748](/Users/we/Library/Application Support/typora-user-images/image-20230118161326748.png)
+
+- CNCF는 각 구성요소에서 자주 사용하고 있는 아키텍처의 제품을 소개한다.
+
+1. 클라이언트에서 API Gateway를 통해서 필요한 서비스를 요청한다.
+2. ServiceDiscovery에서 어디로 향해야 하는지 알려준다.
+3. LoadBalancer에 의해서 A,B MicroService 어디로 가야할지 알려준다.
+4. Config Store를 통해서 환경설정을 관리한다.
+5. 컨테이너 오케스트레이션을 통해서 구축되어 있을 것이다.
+6. CI / CD를 통해서 배포될 때 관리자를 통해서 이뤄질 것이다.
+
+
+
+## Service Mesh
+
+![image-20230118161839131](/Users/we/Library/Application Support/typora-user-images/image-20230118161839131.png)
+
+서비스 메쉬는 하나의 개념이다. 효율적인 MSA 운영에 목적이 있다
+
+
+
+![image-20230118161957837](/Users/we/Library/Application Support/typora-user-images/image-20230118161957837.png)
+
+![image-20230118162221165](/Users/we/Library/Application Support/typora-user-images/image-20230118162221165.png)
