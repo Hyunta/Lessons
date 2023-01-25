@@ -1,6 +1,7 @@
 package tobyspring.helloboot;
 
 import org.springframework.boot.SpringApplication;
+import tobyspring.config.MySpringBootAnnotation;
 
 @MySpringBootAnnotation
 public class HellobootApplication {
