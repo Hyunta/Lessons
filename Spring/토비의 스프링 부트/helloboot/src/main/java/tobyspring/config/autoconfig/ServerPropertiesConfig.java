@@ -3,9 +3,8 @@ package tobyspring.config.autoconfig;
 import org.springframework.boot.context.properties.bind.Binder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
-import tobyspring.config.MyAutoConfiguration;
 
-@MyAutoConfiguration
+@Deprecated
 public class ServerPropertiesConfig {
 
     @Bean
