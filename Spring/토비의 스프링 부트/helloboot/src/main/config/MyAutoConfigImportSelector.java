@@ -1,4 +1,4 @@
-package tobyspring.config;
+package config;
 
 import java.util.ArrayList;
 import java.util.List;

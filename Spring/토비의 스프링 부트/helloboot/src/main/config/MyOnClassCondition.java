@@ -1,4 +1,4 @@
-package tobyspring.config;
+package config;
 
 import java.util.Map;
 import org.springframework.context.annotation.Condition;

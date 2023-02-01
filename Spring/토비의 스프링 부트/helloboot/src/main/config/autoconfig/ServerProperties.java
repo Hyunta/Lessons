@@ -1,6 +1,6 @@
-package tobyspring.config.autoconfig;
+package config.autoconfig;
 
-import tobyspring.config.MyConfigurationProperties;
+import config.MyConfigurationProperties;
 
 @MyConfigurationProperties(prefix = "server")
 public class ServerProperties {

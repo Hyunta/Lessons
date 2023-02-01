@@ -1,15 +1,15 @@
-package tobyspring.config;
+package config;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import org.springframework.context.annotation.Import;
+import org.springframework.stereotype.Component;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-@Import(MyConfigurationPropertiesImportSelector.class)
-public @interface EnableMyConfigurationProperties {
+@Component
+public @interface MyConfigurationProperties {
 
-    Class<?> value();
+    String prefix();
 }

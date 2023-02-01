@@ -1,4 +1,4 @@
-package tobyspring.config.autoconfig;
+package config.autoconfig;
 
 import org.springframework.boot.context.properties.bind.Binder;
 import org.springframework.context.annotation.Bean;

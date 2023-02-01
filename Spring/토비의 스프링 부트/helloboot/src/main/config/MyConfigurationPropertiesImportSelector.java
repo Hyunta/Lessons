@@ -1,4 +1,4 @@
-package tobyspring.config;
+package config;
 
 import org.springframework.context.annotation.DeferredImportSelector;
 import org.springframework.core.type.AnnotationMetadata;

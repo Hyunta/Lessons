@@ -1,6 +1,7 @@
-package tobyspring.config.autoconfig;
+package config.autoconfig;
 
 import com.zaxxer.hikari.HikariDataSource;
+import config.EnableMyConfigurationProperties;
 import java.sql.Driver;
 import javax.sql.DataSource;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -10,9 +11,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
 import org.springframework.jdbc.support.JdbcTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import tobyspring.config.ConditionalMyOnClass;
-import tobyspring.config.EnableMyConfigurationProperties;
-import tobyspring.config.MyAutoConfiguration;
+import config.ConditionalMyOnClass;
+import config.MyAutoConfiguration;
 
 @MyAutoConfiguration
 @ConditionalMyOnClass("org.springframework.jdbc.core.JdbcOperations")

@@ -1,5 +1,6 @@
-package tobyspring.config.autoconfig;
+package config.autoconfig;
 
+import config.MyConfigurationProperties;
 import java.util.Map;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
@@ -7,8 +8,7 @@ import org.springframework.boot.context.properties.bind.Binder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.core.env.Environment;
-import tobyspring.config.MyAutoConfiguration;
-import tobyspring.config.MyConfigurationProperties;
+import config.MyAutoConfiguration;
 
 @MyAutoConfiguration
 public class PropertyPostProcessorConfig {
