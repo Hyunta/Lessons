@@ -1,6 +1,7 @@
 package arthur.userservice.security;
 
 import arthur.userservice.service.UserService;
+import java.net.InetAddress;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
@@ -24,7 +25,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
         http.csrf().disable();
 //        http.authorizeRequests().antMatchers("/users/**").permitAll();
         http.authorizeRequests().antMatchers("/users/**")
-                .hasIpAddress("192.168.0.10")
+                .hasIpAddress(InetAddress.getLocalHost().getHostAddress())
                 .and()
                 .addFilter(getAuthenticationFilter());
 
