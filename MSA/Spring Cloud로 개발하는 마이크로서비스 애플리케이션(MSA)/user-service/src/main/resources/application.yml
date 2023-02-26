@@ -31,3 +31,7 @@ logging:
   level:
     arthur.userservice: debug
 
+token:
+  expiration_time: 86_400_000
+  secret: user_token
+
