@@ -10,10 +10,22 @@ sourceCompatibility = '11'
 
 repositories {
     mavenCentral()
+    maven {
+        url 'https://repo.clojars.org'
+        name 'Clojars'
+    }
 }
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-batch'
+    implementation 'com.h2database:h2:2.1.214'
+
+    compileOnly 'org.projectlombok:lombok:1.18.26'
+    annotationProcessor 'org.projectlombok:lombok:1.18.26'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.26'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.26'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.batch:spring-batch-test'
 }
