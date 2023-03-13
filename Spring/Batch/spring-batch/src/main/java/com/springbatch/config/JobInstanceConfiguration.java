@@ -13,34 +13,34 @@ import org.springframework.context.annotation.Configuration;
 @Slf4j
 //@Configuration
 @RequiredArgsConstructor
-public class DbJobConfiguration {
+public class JobInstanceConfiguration {
 
     private final JobBuilderFactory jobBuilderFactory;
     private final StepBuilderFactory stepBuilderFactory;
 
     @Bean
-    public Job dbJob() {
-        return jobBuilderFactory.get("dbJob")
-                .start(dbStep1())
-                .next(dbStep2())
+    public Job jobInstance() {
+        return jobBuilderFactory.get("jobInstanceJob")
+                .start(jobInstanceStep1())
+                .next(jobInstanceStep2())
                 .build();
     }
 
     @Bean
-    public Step dbStep1() {
-        return stepBuilderFactory.get("dbStep1")
+    public Step jobInstanceStep1() {
+        return stepBuilderFactory.get("jobInstanceStep1")
                 .tasklet((contribution, chunkContext) -> {
-                    log.info("db Step1 was executed");
+                    log.info("jobInstance step1 was executed");
                     return RepeatStatus.FINISHED;
                 })
                 .build();
     }
 
     @Bean
-    public Step dbStep2() {
-        return stepBuilderFactory.get("dbStep2")
+    public Step jobInstanceStep2() {
+        return stepBuilderFactory.get("jobInstanceStep2")
                 .tasklet((contribution, chunkContext) -> {
-                    log.info("db Step2 was executed");
+                    log.info("jobInstance step2 was executed");
                     return RepeatStatus.FINISHED;
                 })
                 .build();
