@@ -24,5 +24,6 @@ class DbConfigTest {
         log.info("dataSource = {}", dataSource);
         log.info("transactionManager = {}", transactionManager);
         log.info("jdbcTemplate = {}", jdbcTemplate);
+
     }
 }
