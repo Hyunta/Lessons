@@ -11,27 +11,26 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Slf4j
-//@Configuration
+@Configuration
 @RequiredArgsConstructor
-public class StepExecutionConfiguration {
+public class StepContributionConfig {
 
     private final JobBuilderFactory jobBuilderFactory;
     private final StepBuilderFactory stepBuilderFactory;
 
     @Bean
     public Job executionJob() {
-        return jobBuilderFactory.get("stepExecutionJob")
+        return jobBuilderFactory.get("stepContributionJob")
                 .start(step1())
                 .next(step2())
-                .next(step3())
                 .build();
     }
 
     @Bean
     public Step step1() {
-        return stepBuilderFactory.get("stepExecutionStep1")
+        return stepBuilderFactory.get("stepContributionStep1")
                 .tasklet(((stepContribution, chunkContext) -> {
-                    log.info("stepExecution step1 was executed");
+                    log.info("stepContribution step1 was executed");
                     return RepeatStatus.FINISHED;
                 }))
                 .build();
@@ -39,20 +38,9 @@ public class StepExecutionConfiguration {
 
     @Bean
     public Step step2() {
-        return stepBuilderFactory.get("stepExecutionStep2")
+        return stepBuilderFactory.get("stepContributionStep2")
                 .tasklet((contribution, chunkContext) -> {
-                    log.info("stepExecution step2 was executed");
-                    throw new RuntimeException("Step2 has failed");
-//                    return RepeatStatus.FINISHED;
-                })
-                .build();
-    }
-
-    @Bean
-    public Step step3() {
-        return stepBuilderFactory.get("stepExecutionStep3")
-                .tasklet((contribution, chunkContext) -> {
-                    log.info("stepExecution step3 was executed");
+                    log.info("stepContribution step2 was executed");
                     return RepeatStatus.FINISHED;
                 })
                 .build();
